@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="myInput" type="text">
+    <button onclick="displaydat()">click me</button>
+    <script>
+        function displaydat() {
+            let userI = document.getElementById("myInput");
+            let userInput = userI.value; 
+            let message;
+        
+        switch(userInput){
+            case "Monday":
+                message = "It's the start of the week.";
+                break;
+            case "Wednesday": 
+                message = "It's a weekday.";
+                break;
+            case "Thursday": 
+                message = "The weekend is almost here.";
+                break;
+            case "Friday": 
+                message = "It's finnaly Friday!";
+                break;
+            default:
+                message = "It's the weekend!";
+        }
+        console.log(message);
+    }
+    </script>
+</body>
+</html>
